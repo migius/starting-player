@@ -1,0 +1,174 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "it-IT": {
+          "summary": "Determina in modo casuale e simpatico chi sarà il primo giocatore",
+          "examplePhrases": [
+            "Alexa, chiedi a giocatore iniziale chi inizia",
+            "Alexa, apri giocatore iniziale",
+            "Alexa, chiedi a giocatore iniziale di aggiungere una regola"
+          ],
+          "keywords": [
+            "giocatore",
+            "iniziale",
+            "primo"
+          ],
+          "name": "Giocatore iniziale",
+          "description": "Viene fornita una regola per determinare in modo casuale e divertente chi è il primo giocatore, sono presenti quasi 200 regole e puoi suggerirne una nuova anche tu!\n\nTrova le mie altre skill su: https://migio.altervista.org/alexa/",
+          "smallIconUri": "file://assets/images/it-IT_smallIconUri.png",
+          "largeIconUri": "file://assets/images/it-IT_largeIconUri.png"
+        },
+        "en-US": {
+          "summary": "This skill provides a random and funny rule to determine the first player",
+          "examplePhrases": [
+            "Alexa, ask starting player who starts",
+            "Alexa, open starting player",
+            "Alexa, ask starting player create a new rule"
+          ],
+          "keywords": [
+            "starting",
+            "first",
+            "player",
+            "boardgame"
+          ],
+          "name": "Starting player",
+          "description": "A funny rule is provided to randomly determine who the first player is, there are nearly 200 different rules and you can suggest a new one too!\n\nFind all my skills: https://migio.altervista.org/alexa/",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        },
+        "en-CA": {
+          "summary": "This skill provides a random and funny rule to determine the first player",
+          "examplePhrases": [
+            "Alexa, ask starting player who starts",
+            "Alexa, open starting player",
+            "Alexa, ask starting player create a new rule"
+          ],
+          "keywords": [
+            "starting",
+            "first",
+            "player",
+            "boardgame"
+          ],
+          "name": "Starting player",
+          "description": "A funny rule is provided to randomly determine who the first player is, there are nearly 200 different rules and you can suggest a new one too!\n\nFind all my skills: https://migio.altervista.org/alexa/",
+          "smallIconUri": "file://assets/images/en-CA_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-CA_largeIconUri.png"
+        },
+        "en-IN": {
+          "summary": "This skill provides a random and funny rule to determine the first player",
+          "examplePhrases": [
+            "Alexa, ask starting player who starts",
+            "Alexa, open starting player",
+            "Alexa, ask starting player create a new rule"
+          ],
+          "keywords": [
+            "starting",
+            "first",
+            "player",
+            "boardgame"
+          ],
+          "name": "Starting player",
+          "description": "A funny rule is provided to randomly determine who the first player is, there are nearly 200 different rules and you can suggest a new one too!\n\nFind all my skills: https://migio.altervista.org/alexa/",
+          "smallIconUri": "file://assets/images/en-IN_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-IN_largeIconUri.png"
+        },
+        "en-AU": {
+          "summary": "This skill provides a random and funny rule to determine the first player",
+          "examplePhrases": [
+            "Alexa, ask starting player who starts",
+            "Alexa, open starting player",
+            "Alexa, ask starting player create a new rule"
+          ],
+          "keywords": [
+            "starting",
+            "first",
+            "player",
+            "boardgame"
+          ],
+          "name": "Starting player",
+          "description": "A funny rule is provided to randomly determine who the first player is, there are nearly 200 different rules and you can suggest a new one too!\n\nFind all my skills: https://migio.altervista.org/alexa/",
+          "smallIconUri": "file://assets/images/en-AU_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-AU_largeIconUri.png"
+        },
+        "en-GB": {
+          "summary": "This skill provides a random and funny rule to determine the first player",
+          "examplePhrases": [
+            "Alexa, ask starting player who starts",
+            "Alexa, open starting player",
+            "Alexa, ask starting player create a new rule"
+          ],
+          "keywords": [
+            "starting",
+            "first",
+            "player",
+            "boardgame"
+          ],
+          "name": "Starting player",
+          "description": "A funny rule is provided to randomly determine who the first player is, there are nearly 200 different rules and you can suggest a new one too!\n\nFind all my skills: https://migio.altervista.org/alexa/",
+          "smallIconUri": "file://assets/images/en-GB_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-GB_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "4 intents available:\n1. you can ask for who start to play: \"who should start\"\n2. propose a rule: \"propose a new rule\"\n3./4. \"activate quick mode\" or \"deactivate quick mode\" for delegate starting player on launch",
+      "category": "GAME_INFO_AND_ACCESSORY",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:586744883151:function:544ebc6a-c67a-44ea-8f3e-85f70a76021a:Release_2"
+        },
+        "interfaces": [
+          {
+            "minimumTemplateVersion": "1.0",
+            "type": "RENDER_TEMPLATE"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::profile:given_name:read"
+      }
+    ],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "it-IT": {
+          "termsOfUseUrl": "https://migio.altervista.org/alexa/GiocatoreIniziale/terms.php",
+          "privacyPolicyUrl": "https://migio.altervista.org/alexa/GiocatoreIniziale/privacy.php"
+        },
+        "en-US": {
+          "termsOfUseUrl": "https://migio.altervista.org/alexa/GiocatoreIniziale/terms.php",
+          "privacyPolicyUrl": "https://migio.altervista.org/alexa/GiocatoreIniziale/privacy.php"
+        },
+        "en-CA": {
+          "termsOfUseUrl": "https://migio.altervista.org/alexa/GiocatoreIniziale/terms.php",
+          "privacyPolicyUrl": "https://migio.altervista.org/alexa/GiocatoreIniziale/privacy.php"
+        },
+        "en-IN": {
+          "termsOfUseUrl": "https://migio.altervista.org/alexa/GiocatoreIniziale/terms.php",
+          "privacyPolicyUrl": "https://migio.altervista.org/alexa/GiocatoreIniziale/privacy.php"
+        },
+        "en-AU": {
+          "termsOfUseUrl": "https://migio.altervista.org/alexa/GiocatoreIniziale/terms.php",
+          "privacyPolicyUrl": "https://migio.altervista.org/alexa/GiocatoreIniziale/privacy.php"
+        },
+        "en-GB": {
+          "termsOfUseUrl": "https://migio.altervista.org/alexa/GiocatoreIniziale/terms.php",
+          "privacyPolicyUrl": "https://migio.altervista.org/alexa/GiocatoreIniziale/privacy.php"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

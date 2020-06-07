@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang=en>
+   <head>
+      <meta charset=utf-8>
+      <title>The Starting Player is...</title>
+      <meta charset="utf-8"/>
+      <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"/>
+      <meta name=description content="The Starting Player is... help you to find the starting player at your table"/>
+      <meta name=author content="migio"/>
+      <meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+      <meta itemprop=name content="The Starting Player is..."/>
+      <meta itemprop=description content="The Starting Player is... help you to find the starting player at your table"/>
+      <meta itemprop=image content="http://migio.altervista.org/sp/starting_player.png"/>
+      <meta name=twitter:card content="summary_large_image"/>
+      <meta name=twitter:site content="@brunimichele"/>
+      <meta name=twitter:title content="The Starting Player is..."/>
+      <meta name=twitter:description content="The Starting Player is... help you to find the starting player at your table"/>
+      <meta name=twitter:creator content="@brunimichele"/>
+      <meta name=twitter:image:src content="http://migio.altervista.org/sp/starting_player.png"/>
+      <meta name=og:title content="The Starting Player is..." />
+      <meta name=og:image content=http://migio.altervista.org/sp/starting_player.png />
+      <meta name=og:description content="The Starting Player is... help you to find the starting player at your table"/>
+      <meta property=og:title content="The Starting Player is..."/>
+      <meta property=og:type content="article"/>
+      <meta property=og:url content="http://migio.altervista.org/sp/en"/>
+      <meta property=og:image content="http://migio.altervista.org/sp/starting_player.png"/>
+      <meta property=og:description content="The Starting Player is... help you to find the starting player at your table"/>
+      <meta property=og:site_name content="migio"/>
+      <meta property=og:author content="migio"/>
+      <meta property=fb:app_id content="133312090038388"/>
+      
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      
+
+      <link href="../res/style.min.css?v=1.2.10" rel=stylesheet />
+      <style>#iubenda-cs-banner{top:0!important;left:0!important;position:fixed!important;width:100%!important;z-index:99999998!important;background:#000;background:rgba(0,0,0,.85)}.iubenda-cs-content{display:block;margin:0 auto;padding:10px 50px 10px 20px;width:auto;font-family:Helvetica,Arial,FreeSans,sans-serif;font-size:12px;color:#fff!important}.iubenda-cs-rationale{max-width:900px;position:relative;margin:0 auto}.iubenda-banner-content>p{font-family:Helvetica,Arial,FreeSans,sans-serif;line-height:1.5}.iubenda-cs-close-btn{color:#fff!important;text-decoration:none;font-size:12px;position:absolute;top:-5px;right:-20px;border:1px solid #fff!important;display:inline-block;width:20px;height:20px;line-height:20px;text-align:center;border-radius:10px}.iubenda-cs-cookie-policy-lnk{text-decoration:underline;color:#fff!important;font-size:12px;font-weight:900}</style>
+   </head>
+   <body>
+      <nav class="navbar navbar-dark bg-dark navbar-expand">
+         <a class=navbar-brand href=/ id=Titolo>migio</a>
+         <ul class="nav navbar-nav d-flex justify-content-end" style=width:100%>
+            <li class=nav-item>
+               <a class=nav-link href=../it/>IT</a>
+            </li>
+            <li class=nav-item>
+               <a class=nav-link href=../en/>EN</a>
+            </li>
+         </ul>
+      </nav>
+      <div class=all>
+         <div class=container>
+
+
+            <!--TOAST-->
+            <div id="alexa-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+                <div class="toast-header">
+                    <img src="../res/icon/alexa-icon_32.png" class="rounded mr-2" alt="alexa logo">
+                    <strong class="mr-auto">Alexa Skill</strong>
+                    <small class="text-muted"><a href=https://www.amazon.com/Bruni-Michele-Giocatore-iniziale/dp/B086KVLSQL target=_blank>activate it now</a></small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    <a href=https://www.amazon.com/Bruni-Michele-Giocatore-iniziale/dp/B086KVLSQL target=_blank>Activate the starting player skill</a> to ask Alexa for a rule!
+                </div>
+            </div>
+
+            <div id="telegram-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+                <div class="toast-header">
+                    <img src="../res/icon/telegram-icon_32.png" class="rounded mr-2" alt="telegram logo">
+                    <strong class="mr-auto">Telegram Bot</strong>
+                    <small class="text-muted"><a href=https://t.me/StartingPlayerBot target=_blank>try it now</a></small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    <a href=https://t.me/StartingPlayerBot target=_blank>Activate the Telegram bot </a> to determine who starts playing!
+                </div>
+            </div>
+
+
+
+
+            <h1 class=display-4>The Starting Player is...</h1>
+            <p>
+               <span id=randomPart></span>
+            </p>
+            <br/>
+            <br/>
+            <a class="btn btn-primary" href=javascript:putRandomRule() role=button>Generate another</a>
+            <br/>
+            <br/>
+            <div class="row justify-content-md-end">
+               <div id=rigaGioco class="rigaNascosta rigaGiocoClass col-xs-12 col-md-6">
+                  <h3>this rule is used in <b><span id=Gioco></span></b></h3>
+               </div>
+            </div>
+            <div class="row justify-content-md-end">
+               <div id=rigaGiocoAssente class="rigaNascosta rigaGiocoClass col-xs-12 col-md-6">
+                  <h3>is this rue used in a game that you know? <b><span id=GiocoAssente><a title=Segnalamelo href=# class="btn btn-secondary btn-lg" id=openSegnala>Tell me</a></span></b></h3>
+               </div>
+            </div>
+            <div id=rigaAutore>
+               <p>rule added by <b><span id=Autore></span></b></p>
+            </div>
+         </div>
+         <footer>
+            <p>&copy;
+               <a href=http://migio.altervista.org/ target=_blank class=white>migio</a> |
+               <a href="http://www.iubenda.com/privacy-policy/7899706/cookie-policy?an=no&s_ck=false" class=white>cookies</a> |
+               <a href=# id=openSug class=white>make a suggestion</a> |
+               <span id=number></span> different rules
+            </p>
+         </footer>
+      </div>
+      <div id=myModal class=modal>
+         <span class=close id=closeSug>&times;</span>
+         <form id=sendSuggestioneForm onsubmit=postSuggestion() title method=post class=modal-content>
+            <div class=form-group>
+               <label for=s>Your suggestione</label>
+               <input type=text id=s name=s class=form-control>
+            </div>
+            <div class=form-group>
+               <label for=a>Your nickname</label>
+               <input type=text id=a name=a class=form-control>
+            </div>
+            <div class=form-group>
+               <label for=g>is this rule used in a game? what game?</label>
+               <input type=text id=g name=g class=form-control>
+            </div>
+            <input type=hidden id=l name=l value="en_US"/>
+            <div>
+               <input type=submit id=submitButton name=submitButton value=Conferma class="btn btn-primary">
+            </div>
+         </form>
+      </div>
+      <div id=myModal_Segnala class=modal>
+         <span class=close id=closeSegnala>&times;</span>
+         <form id=sendSegnalaForm onsubmit=postSuggestion() title method=post class=modal-content>
+            <div class=form-group>
+               <label for=a>Your nickname</label>
+               <input type=text id=Segnala_a name=Segnala_a class=form-control>
+            </div>
+            <div class=form-group>
+               <label for=g>in what game is used?</label>
+               <input type=text id=Segnala_g name=Segnala_g class=form-control>
+            </div>
+            <div>
+               <input type=submit id=submitButton name=submitButton value=Conferma class="btn btn-primary">
+            </div>
+         </form>
+      </div>
+      <!-- JS, Popper.js, and jQuery -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+      <script>var lang="EN";</script>
+      <script src="../res/script.min.js?v=2.0.3"></script>
+      <script>(function(a,h,d,c,g,f){a.GoogleAnalyticsObject=c;a[c]||(a[c]=function(){(a[c].q=a[c].q||[]).push(arguments)});a[c].l=+new Date;g=h.createElement(d);f=h.getElementsByTagName(d)[0];g.src="//www.google-analytics.com/analytics.js";f.parentNode.insertBefore(g,f)}(window,document,"script","ga"));ga("create","UA-82977202-1","auto");ga("send","pageview");</script>
+   </body>
+</html>

@@ -1,0 +1,458 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "starting player",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "GiocatoreInizialeIntent",
+          "slots": [],
+          "samples": [
+            "who should start",
+            "who starts",
+            "who must start",
+            "the first player",
+            "the starting player",
+            "who is the first player",
+            "who is the starting player",
+            "who begins",
+            "a rule",
+            "another rule",
+            "tell who should start",
+            "tell who starts",
+            "tell who must start",
+            "tell the first player",
+            "tell the starting player",
+            "tell who is the first player",
+            "tell who is the starting player",
+            "tell who begins",
+            "tell a rule",
+            "tell another rule",
+            "tell me who should start",
+            "tell me who starts",
+            "tell me who must start",
+            "tell me the first player",
+            "tell me the starting player",
+            "tell me who is the first player",
+            "tell me who is the starting player",
+            "tell me who begins",
+            "tell me a rule",
+            "tell me another rule",
+            "say who should start",
+            "say who starts",
+            "say who must start",
+            "say the first player",
+            "say the starting player",
+            "say who is the first player",
+            "say who is the starting player",
+            "say who begins",
+            "say a rule",
+            "say another rule",
+            "say me who should start",
+            "say me who starts",
+            "say me who must start",
+            "say me the first player",
+            "say me the starting player",
+            "say me who is the first player",
+            "say me who is the starting player",
+            "say me who begins",
+            "say me a rule",
+            "say me another rule",
+            "suggest who should start",
+            "suggest who starts",
+            "suggest who must start",
+            "suggest the first player",
+            "suggest the starting player",
+            "suggest who is the first player",
+            "suggest who is the starting player",
+            "suggest who begins",
+            "suggest a rule",
+            "suggest another rule",
+            "suggest me who should start",
+            "suggest me who starts",
+            "suggest me who must start",
+            "suggest me the first player",
+            "suggest me the starting player",
+            "suggest me who is the first player",
+            "suggest me who is the starting player",
+            "suggest me who begins",
+            "suggest me a rule",
+            "suggest me another rule",
+            "advise who should start",
+            "advise who starts",
+            "advise who must start",
+            "advise the first player",
+            "advise the starting player",
+            "advise who is the first player",
+            "advise who is the starting player",
+            "advise who begins",
+            "advise a rule",
+            "advise another rule",
+            "advise me who should start",
+            "advise me who starts",
+            "advise me who must start",
+            "advise me the first player",
+            "advise me the starting player",
+            "advise me who is the first player",
+            "advise me who is the starting player",
+            "advise me who begins",
+            "advise me a rule",
+            "advise me another rule",
+            "recommend who should start",
+            "recommend who starts",
+            "recommend who must start",
+            "recommend the first player",
+            "recommend the starting player",
+            "recommend who is the first player",
+            "recommend who is the starting player",
+            "recommend who begins",
+            "recommend a rule",
+            "recommend another rule",
+            "recommend me who should start",
+            "recommend me who starts",
+            "recommend me who must start",
+            "recommend me the first player",
+            "recommend me the starting player",
+            "recommend me who is the first player",
+            "recommend me who is the starting player",
+            "recommend me who begins",
+            "recommend me a rule",
+            "recommend me another rule",
+            "to tell who should start",
+            "to tell who starts",
+            "to tell who must start",
+            "to tell the first player",
+            "to tell the starting player",
+            "to tell who is the first player",
+            "to tell who is the starting player",
+            "to tell who begins",
+            "to tell a rule",
+            "to tell another rule",
+            "to tell me who should start",
+            "to tell me who starts",
+            "to tell me who must start",
+            "to tell me the first player",
+            "to tell me the starting player",
+            "to tell me who is the first player",
+            "to tell me who is the starting player",
+            "to tell me who begins",
+            "to tell me a rule",
+            "to tell me another rule",
+            "to say who should start",
+            "to say who starts",
+            "to say who must start",
+            "to say the first player",
+            "to say the starting player",
+            "to say who is the first player",
+            "to say who is the starting player",
+            "to say who begins",
+            "to say a rule",
+            "to say another rule",
+            "to say me who should start",
+            "to say me who starts",
+            "to say me who must start",
+            "to say me the first player",
+            "to say me the starting player",
+            "to say me who is the first player",
+            "to say me who is the starting player",
+            "to say me who begins",
+            "to say me a rule",
+            "to say me another rule",
+            "to suggest who should start",
+            "to suggest who starts",
+            "to suggest who must start",
+            "to suggest the first player",
+            "to suggest the starting player",
+            "to suggest who is the first player",
+            "to suggest who is the starting player",
+            "to suggest who begins",
+            "to suggest a rule",
+            "to suggest another rule",
+            "to suggest me who should start",
+            "to suggest me who starts",
+            "to suggest me who must start",
+            "to suggest me the first player",
+            "to suggest me the starting player",
+            "to suggest me who is the first player",
+            "to suggest me who is the starting player",
+            "to suggest me who begins",
+            "to suggest me a rule",
+            "to suggest me another rule",
+            "to advise who should start",
+            "to advise who starts",
+            "to advise who must start",
+            "to advise the first player",
+            "to advise the starting player",
+            "to advise who is the first player",
+            "to advise who is the starting player",
+            "to advise who begins",
+            "to advise a rule",
+            "to advise another rule",
+            "to advise me who should start",
+            "to advise me who starts",
+            "to advise me who must start",
+            "to advise me the first player",
+            "to advise me the starting player",
+            "to advise me who is the first player",
+            "to advise me who is the starting player",
+            "to advise me who begins",
+            "to advise me a rule",
+            "to advise me another rule",
+            "to recommend who should start",
+            "to recommend who starts",
+            "to recommend who must start",
+            "to recommend the first player",
+            "to recommend the starting player",
+            "to recommend who is the first player",
+            "to recommend who is the starting player",
+            "to recommend who begins",
+            "to recommend a rule",
+            "to recommend another rule",
+            "to recommend me who should start",
+            "to recommend me who starts",
+            "to recommend me who must start",
+            "to recommend me the first player",
+            "to recommend me the starting player",
+            "to recommend me who is the first player",
+            "to recommend me who is the starting player",
+            "to recommend me who begins",
+            "to recommend me a rule",
+            "to recommend me another rule"
+          ]
+        },
+        {
+          "name": "AggiungiRegolaIntent",
+          "slots": [
+            {
+              "name": "proposta",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "add a new rule",
+            "add rule {proposta}",
+            "add a rule",
+            "propose a new rule",
+            "propose rule {proposta}",
+            "propose a rule",
+            "make a new rule",
+            "make rule {proposta}",
+            "make a rule",
+            "create a new rule",
+            "create rule {proposta}",
+            "create a rule",
+            "to add a new rule",
+            "to add rule {proposta}",
+            "to add a rule",
+            "to propose a new rule",
+            "to propose rule {proposta}",
+            "to propose a rule",
+            "to make a new rule",
+            "to make rule {proposta}",
+            "to make a rule",
+            "to create a new rule",
+            "to create rule {proposta}",
+            "to create a rule"
+          ]
+        },
+        {
+          "name": "AMAZON.MoreIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateSettingsIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
+        },
+        {
+          "name": "SetAutoRuleIntent",
+          "slots": [],
+          "samples": [
+            "start rapid mode ",
+            "activate rapid mode",
+            "launch rapid mode",
+            "open rapid mode",
+            "start quick mode ",
+            "activate quick mode",
+            "launch quick mode",
+            "open quick mode",
+            "start fast mode ",
+            "activate fast mode",
+            "launch fast mode",
+            "open fast mode",
+            "to start rapid mode ",
+            "to activate rapid mode",
+            "to launch rapid mode",
+            "to open rapid mode",
+            "to start quick mode ",
+            "to activate quick mode",
+            "to launch quick mode",
+            "to open quick mode",
+            "to start fast mode ",
+            "to activate fast mode",
+            "to launch fast mode",
+            "to open fast mode"
+          ]
+        },
+        {
+          "name": "DeleteAutoRuleIntent",
+          "slots": [],
+          "samples": [
+            "stop rapid mode ",
+            "deactivate rapid mode",
+            "arrest rapid mode",
+            "close rapid mode",
+            "stop quick mode ",
+            "deactivate quick mode",
+            "arrest quick mode",
+            "close quick mode",
+            "stop fast mode ",
+            "deactivate fast mode",
+            "arrest fast mode",
+            "close fast mode",
+            "to stop rapid mode ",
+            "to deactivate rapid mode",
+            "to arrest rapid mode",
+            "to close rapid mode",
+            "to stop quick mode ",
+            "to deactivate quick mode",
+            "to arrest quick mode",
+            "to close quick mode",
+            "to stop fast mode ",
+            "to deactivate fast mode",
+            "to arrest fast mode",
+            "to close fast mode"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "AggiungiRegolaIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "proposta",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1037136660763.1036510324836"
+              }
+            }
+          ]
+        },
+        {
+          "name": "GiocatoreInizialeIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": []
+        },
+        {
+          "name": "SetAutoRuleIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.961587294049"
+          },
+          "slots": []
+        },
+        {
+          "name": "DeleteAutoRuleIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.840225206258"
+          },
+          "slots": []
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1037136660763.1036510324836",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Tell me your proposed rule"
+          },
+          {
+            "type": "PlainText",
+            "value": "Tell me which rule you want to suggest"
+          },
+          {
+            "type": "PlainText",
+            "value": "Dictate the rule you suggest"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.961587294049",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "With the quick mode I will tell you the rule immediately, would you activate it?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.840225206258",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "With the quick mode I will tell you the rule immediately, would you stop it?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "3"
+}

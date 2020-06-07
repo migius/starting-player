@@ -1,0 +1,357 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "giocatore iniziale",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "cosa fai",
+            "cosa posso fare",
+            "chiedi aiuto"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "GiocatoreInizialeIntent",
+          "slots": [],
+          "samples": [
+            "chi deve cominciare",
+            "chi comincia",
+            "chi deve iniziare",
+            "il primo giocatore",
+            "il giocatore iniziale",
+            "chi è il primo giocatore",
+            "chi è il giocatore iniziale",
+            "chi inizia",
+            "una regola",
+            "un\u0027altra regola",
+            "dimmi chi deve cominciare",
+            "dimmi chi comincia",
+            "dimmi chi deve iniziare",
+            "dimmi il primo giocatore",
+            "dimmi il giocatore iniziale",
+            "dimmi chi è il primo giocatore",
+            "dimmi chi è il giocatore iniziale",
+            "dimmi chi inizia",
+            "dimmi una regola",
+            "dimmi un\u0027altra regola",
+            "dirmi chi deve cominciare",
+            "dirmi chi comincia",
+            "dirmi chi deve iniziare",
+            "dirmi il primo giocatore",
+            "dirmi il giocatore iniziale",
+            "dirmi chi è il primo giocatore",
+            "dirmi chi è il giocatore iniziale",
+            "dirmi chi inizia",
+            "dirmi una regola",
+            "dirmi un\u0027altra regola",
+            "suggeriscimi chi deve cominciare",
+            "suggeriscimi chi comincia",
+            "suggeriscimi chi deve iniziare",
+            "suggeriscimi il primo giocatore",
+            "suggeriscimi il giocatore iniziale",
+            "suggeriscimi chi è il primo giocatore",
+            "suggeriscimi chi è il giocatore iniziale",
+            "suggeriscimi chi inizia",
+            "suggeriscimi una regola",
+            "suggeriscimi un\u0027altra regola",
+            "suggerirmi chi deve cominciare",
+            "suggerirmi chi comincia",
+            "suggerirmi chi deve iniziare",
+            "suggerirmi il primo giocatore",
+            "suggerirmi il giocatore iniziale",
+            "suggerirmi chi è il primo giocatore",
+            "suggerirmi chi è il giocatore iniziale",
+            "suggerirmi chi inizia",
+            "suggerirmi una regola",
+            "suggerirmi un\u0027altra regola",
+            "consigliami chi deve cominciare",
+            "consigliami chi comincia",
+            "consigliami chi deve iniziare",
+            "consigliami il primo giocatore",
+            "consigliami il giocatore iniziale",
+            "consigliami chi è il primo giocatore",
+            "consigliami chi è il giocatore iniziale",
+            "consigliami chi inizia",
+            "consigliami una regola",
+            "consigliami un\u0027altra regola",
+            "consigliarmi chi deve cominciare",
+            "consigliarmi chi comincia",
+            "consigliarmi chi deve iniziare",
+            "consigliarmi il primo giocatore",
+            "consigliarmi il giocatore iniziale",
+            "consigliarmi chi è il primo giocatore",
+            "consigliarmi chi è il giocatore iniziale",
+            "consigliarmi chi inizia",
+            "consigliarmi una regola",
+            "consigliarmi un\u0027altra regola"
+          ]
+        },
+        {
+          "name": "AggiungiRegolaIntent",
+          "slots": [
+            {
+              "name": "proposta",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "aggiungi una regola",
+            "aggiungi una nuova regola",
+            "aggiungi la regola {proposta}",
+            "aggiungere una regola",
+            "aggiungere una nuova regola",
+            "aggiungere la regola {proposta}",
+            "proponi una regola",
+            "proponi una nuova regola",
+            "proponi la regola {proposta}",
+            "proporre una regola",
+            "proporre una nuova regola",
+            "proporre la regola {proposta}",
+            "suggerisci una regola",
+            "suggerisci una nuova regola",
+            "suggerisci la regola {proposta}",
+            "suggerire una regola",
+            "suggerire una nuova regola",
+            "suggerire la regola {proposta}",
+            "crea una nuova regola",
+            "crea una regola",
+            "crea la regola {proposta}",
+            "creare una nuova regola",
+            "creare una regola",
+            "creare la regola {proposta}"
+          ]
+        },
+        {
+          "name": "AMAZON.MoreIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateSettingsIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
+        },
+        {
+          "name": "SetAutoRuleIntent",
+          "slots": [],
+          "samples": [
+            "apri modalità veloce",
+            "apri modalità rapida",
+            "apri la modalità veloce",
+            "apri la modalità rapida",
+            "avvia la modalità veloce",
+            "avvia la modalità rapida",
+            "abilita la modalità veloce",
+            "abilita la modalità rapida",
+            "accendi la modalità veloce",
+            "accendi la modalità rapida",
+            "avvia modalità veloce",
+            "avvia modalità rapida",
+            "abilita modalità veloce",
+            "abilita modalità rapida",
+            "accendi modalità veloce",
+            "accendi modalità rapida",
+            "attiva modalità veloce",
+            "attiva modalità rapida",
+            "attiva la modalità veloce",
+            "attiva la modalità rapida",
+            "abilita la regola automatica all\u0027avvio",
+            "attiva la scelta automatica del primo giocatore ",
+            "attiva la scelta del primo giocatore",
+            "attiva la scelta del giocatore all\u0027avvio",
+            "attiva la scelta del giocatore all\u0027avvio della skill",
+            "scegli subito il giocatore iniziale",
+            "scegli automaticamente il giocatore iniziale",
+            "Scegli giocatore iniziale all\u0027avvio",
+            "Attiva regola automatica all\u0027avvio",
+            "Riproduci automaticamente regola all\u0027avvio",
+            "Riproduci regola all\u0027avvio"
+          ]
+        },
+        {
+          "name": "DeleteAutoRuleIntent",
+          "slots": [],
+          "samples": [
+            "elimina modalità veloce",
+            "elimina modalità rapida",
+            "elimina la modalità veloce",
+            "elimina la modalità rapida",
+            "ferma la modalità veloce",
+            "ferma la modalità rapida",
+            "disabilita la modalità veloce",
+            "disabilita la modalità rapida",
+            "disabilita modalità veloce",
+            "disabilita modalità rapida",
+            "disabilita la regola automatica all\u0027avvio",
+            "ferma modalità veloce",
+            "ferma modalità rapida",
+            "spegni la modalità veloce",
+            "spegni la modalità rapida",
+            "spegni modalità veloce",
+            "spegni modalità rapida",
+            "disattiva modalità veloce",
+            "disattiva modalità rapida",
+            "disattiva la modalità veloce",
+            "disattiva la modalità rapida",
+            "disattiva la scelta automatica del primo giocatore",
+            "disattiva la scelta del primo giocatore",
+            "disattiva la scelta del giocatore all\u0027avvio",
+            "disattiva la scelta del giocatore all\u0027avvio della skill",
+            "non scegliere subito il giocatore iniziale",
+            "non scegliere automaticamente il giocatore iniziale",
+            "non scegliere giocatore iniziale all\u0027avvio",
+            "disattiva regola automatica all\u0027avvio",
+            "disabilita regola automatica all\u0027avvio",
+            "non riprodurre automaticamente regola all\u0027avvio",
+            "non riprodurre regola all\u0027avvio"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "AggiungiRegolaIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "proposta",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1037136660763.1036510324836"
+              }
+            }
+          ]
+        },
+        {
+          "name": "GiocatoreInizialeIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": []
+        },
+        {
+          "name": "SetAutoRuleIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.961587294049"
+          },
+          "slots": []
+        },
+        {
+          "name": "DeleteAutoRuleIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.840225206258"
+          },
+          "slots": []
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1037136660763.1036510324836",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dimmi la tua regola proposta"
+          },
+          {
+            "type": "PlainText",
+            "value": "Dimmi quale regola vuoi suggerire"
+          },
+          {
+            "type": "PlainText",
+            "value": "Dimmi quale regola suggerisci"
+          },
+          {
+            "type": "PlainText",
+            "value": "Dimmi la tua proposta"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.961587294049",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Con la modalità rapida ti dirò chi è il giocatore iniziale all\u0027avvio, senza bisogne che tu mi dica altro, vuoi attivarla?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Con la modalità rapida ti dirò chi è il giocatore iniziale all\u0027avvio, senza bisogne che tu me lo chieda, vuoi attivarla?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Con la modalità rapida ti dirò chi è il giocatore iniziale subito dopo l\u0027avvio, senza bisogne che tu me lo chieda, vuoi attivarla?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.840225206258",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Con la modalità rapida ti dirò chi è il giocatore iniziale all\u0027avvio, senza bisogne che tu mi dica altro, vuoi davvero disattivarla?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Con la modalità rapida ti dirò chi è il giocatore iniziale all\u0027avvio, senza bisogne che tu me lo chieda, vuoi davvero disattivarla?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Con la modalità rapida ti dirò chi è il giocatore iniziale subito dopo l\u0027avvio, senza bisogne che tu me lo chieda, vuoi davvero disattivarla?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "17"
+}

@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "b8186ef0-f9ab-4569-8581-31187cae1609",
+		"name": "starting_player",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getRule",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b1302029-1dde-4fcb-889f-2a35c8b0a4c1",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Content-Type is present\", function () {",
+							"    pm.response.to.have.header(\"Content-Type\");",
+							"});",
+							"",
+							"var schema = {",
+							"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",",
+							"  \"type\": \"array\",",
+							"  \"items\": [",
+							"    {",
+							"      \"type\": \"object\",",
+							"      \"properties\": {",
+							"        \"Title\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"Rule\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"Author\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"Icon\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"Weight\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"Lang\": {",
+							"          \"type\": \"string\"",
+							"        },",
+							"        \"Game\": {",
+							"          \"type\": [ \"string\", \"null\" ]",
+							"        },",
+							"        \"Link\": {",
+							"          \"type\": [ \"string\", \"null\" ]",
+							"        },",
+							"        \"AlexaSpeak\": {",
+							"          \"type\": \"string\"",
+							"        }",
+							"      },",
+							"      \"required\": [",
+							"        \"Title\",",
+							"        \"Rule\",",
+							"        \"Author\",",
+							"        \"Icon\",",
+							"        \"Weight\",",
+							"        \"Lang\",",
+							"        \"Game\",",
+							"        \"Link\",",
+							"        \"AlexaSpeak\"",
+							"      ]",
+							"    }",
+							"  ]",
+							"};",
+							"",
+							"",
+							"",
+							"pm.test('Schema is valid', function() {",
+							"  var data = pm.response.json();",
+							"  pm.expect(tv4.validate(data, schema)).to.be.true;",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://migio.altervista.org/sp/res/getRules.php?l=IT&limit=1",
+					"protocol": "https",
+					"host": [
+						"migio",
+						"altervista",
+						"org"
+					],
+					"path": [
+						"sp",
+						"res",
+						"getRules.php"
+					],
+					"query": [
+						{
+							"key": "l",
+							"value": "IT"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendSuggestion",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5a42d780-3d75-4bfd-9fe0-8c0fcfc0b9b1",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Content-Type is present\", function () {",
+							"    pm.response.to.have.header(\"Content-Type\");",
+							"});",
+							"",
+							"var schema = {",
+							"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",",
+							"  \"type\": \"object\",",
+							"  \"properties\": {",
+							"    \"lingua\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"proposta\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"autore\": {",
+							"      \"type\": \"string\"",
+							"    },",
+							"    \"gioco\": {",
+							"      \"type\": \"string\"",
+							"    }",
+							"  },",
+							"  \"required\": [",
+							"    \"lingua\",",
+							"    \"proposta\",",
+							"    \"autore\",",
+							"    \"gioco\"",
+							"  ]",
+							"};",
+							"",
+							"",
+							"",
+							"pm.test('Schema is valid', function() {",
+							"  var data = pm.response.json();",
+							"  pm.expect(tv4.validate(data, schema)).to.be.true;",
+							"});",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://migio.altervista.org/sp/res/sendSuggestion.php?l=it&p=proposta&a=autore&g=gioco&rule=3ababfe1-0640-4e7e-b508-87887205ee18",
+					"protocol": "https",
+					"host": [
+						"migio",
+						"altervista",
+						"org"
+					],
+					"path": [
+						"sp",
+						"res",
+						"sendSuggestion.php"
+					],
+					"query": [
+						{
+							"key": "l",
+							"value": "it"
+						},
+						{
+							"key": "p",
+							"value": "proposta"
+						},
+						{
+							"key": "a",
+							"value": "autore"
+						},
+						{
+							"key": "g",
+							"value": "gioco"
+						},
+						{
+							"key": "rule",
+							"value": "3ababfe1-0640-4e7e-b508-87887205ee18"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
